@@ -1,7 +1,10 @@
+@import 'https://fonts.googleapis.com/css?family=Gloria+Hallelujah';
 h2 {
   margin-top: 100px;
   padding-bottom: 30px;
-  text-align: center; }
+  text-align: center;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 40px; }
 
 .row {
   padding-bottom: 50px; }
