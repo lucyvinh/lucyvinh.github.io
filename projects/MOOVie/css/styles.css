@@ -28,4 +28,11 @@ h2 {
   text-align: center;
   background: url("../images/babycow.jpg") no-repeat right; }
 
+.row-genre1 {
+  margin: auto;
+  padding: 100px; }
+
+.row-genre2 {
+  margin: auto; }
+
 /*# sourceMappingURL=styles.css.map */
