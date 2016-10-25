@@ -1,0 +1,81 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-S',
+1 verbose cli   'react' ]
+2 info using npm@3.10.3
+3 info using node@v6.7.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData react
+8 silly fetchNamedPackageData react
+9 silly mapToRegistry name react
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'react',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'react',
+12 silly mapToRegistry   name: 'react',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/react
+14 verbose request uri https://registry.npmjs.org/react
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 6:20:14 PM
+17 verbose request id 373327a3ceeafa39
+18 verbose etag "D7BBV508RAK81P0WZDEXM4M4O"
+19 http request GET https://registry.npmjs.org/react
+20 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+21 info attempt registry request try #2 at 6:20:54 PM
+22 verbose etag "D7BBV508RAK81P0WZDEXM4M4O"
+23 http request GET https://registry.npmjs.org/react
+24 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+25 info attempt registry request try #3 at 6:22:24 PM
+26 verbose etag "D7BBV508RAK81P0WZDEXM4M4O"
+27 http request GET https://registry.npmjs.org/react
+28 silly get cb [ 304, undefined ]
+29 verbose etag https://registry.npmjs.org/react from cache
+30 verbose get saving react to /Users/lucyvinh/.npm/registry.npmjs.org/react/.cache.json
+31 verbose correctMkdir /Users/lucyvinh/.npm correctMkdir not in flight; initializing
+32 silly install normalizeTree
+33 silly loadCurrentTree Finishing
+34 silly loadIdealTree Starting
+35 silly install loadIdealTree
+36 silly cloneCurrentTree Starting
+37 silly install cloneCurrentTreeToIdealTree
+38 silly cloneCurrentTree Finishing
+39 silly loadShrinkwrap Starting
+40 silly install loadShrinkwrap
+41 silly loadShrinkwrap Finishing
+42 silly loadAllDepsIntoIdealTree Starting
+43 silly install loadAllDepsIntoIdealTree
+44 silly rollbackFailedOptional Starting
+45 silly rollbackFailedOptional Finishing
+46 silly runTopLevelLifecycles Starting
+47 silly runTopLevelLifecycles Finishing
+48 silly install printInstalled
+49 verbose stack Error: Refusing to install react as a dependency of itself
+49 verbose stack     at checkSelf (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+49 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+49 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+49 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+49 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/validate-args.js:16:5
+49 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+49 verbose stack     at Array.forEach (native)
+49 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+49 verbose stack     at Array.forEach (native)
+49 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+50 verbose cwd /Users/lucyvinh/Documents/GitHub/lucyvinh.github.io/React
+51 error Darwin 15.6.0
+52 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-S" "react"
+53 error node v6.7.0
+54 error npm  v3.10.3
+55 error code ENOSELF
+56 error Refusing to install react as a dependency of itself
+57 error If you need help, you may report this error at:
+57 error     <https://github.com/npm/npm/issues>
+58 verbose exit [ 1, true ]
