@@ -2,17 +2,23 @@
 @import url("https://fonts.googleapis.com/css?family=Special+Elite");
 .container-body {
   background-color: grey;
-  border-radius: 25px; }
+  border-radius: 25px;
+  margin-bottom: 100px; }
 
 h2 {
-  margin-top: 100px;
-  padding-bottom: 30px;
+  margin-top: 50px;
   text-align: center;
   font-family: "Gloria Hallelujah", cursive;
-  font-size: 40px; }
+  font-size: 45px; }
 
 .row {
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  text-align: center;
+  margin: 25px; }
+
+#emoji {
+  background-color: grey;
+  border-radius: 25px; }
 
 .img-responsive {
   transition: transform 4s;
