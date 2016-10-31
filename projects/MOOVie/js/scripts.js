@@ -5,7 +5,6 @@ $('#emoji-happy').on('click', () => {
   displayResults();
 });
 
-
 let url = 'https://api.themoviedb.org/3/genre/35/movies?api_key=9bd1f25c3d0ac4ea5f8d7e4ff01ee51b&language=en-US&sort_by=created_at.asc';
 
 $.getJSON(url, function(data) {
