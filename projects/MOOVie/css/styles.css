@@ -6,7 +6,7 @@
   margin-bottom: 20px; }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
   font-family: "Gloria Hallelujah", cursive;
   font-size: 45px; }
@@ -47,5 +47,8 @@ h2 {
 #genre-question {
   font-family: "Special Elite", cursive;
   font-size: 20px; }
+
+p {
+  margin: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
