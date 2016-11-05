@@ -23,10 +23,12 @@ function displayResults(movie) {
       let movieRelease = movie.release_date;
       // TODO: get API from another source for the following:
       // movie similar API request
-      let similarMovieUrl = 'https://api.themoviedb.org/3/movie/movieID/similar?api_key=9bd1f25c3d0ac4ea5f8d7e4ff01ee51b&language=en-US';
-      let movieRating = 'https://api.themoviedb.org/3/review/movie.id?api_key=9bd1f25c3d0ac4ea5f8d7e4ff01ee51b';
+      let similarMovieUrl = 'https://api.themoviedb.org/3/movie/' + movieID +'/similar?api_key=9bd1f25c3d0ac4ea5f8d7e4ff01ee51b&language=en-US';
+      let movieRating = 'https://api.themoviedb.org/3/review/' + movieID + '?api_key=9bd1f25c3d0ac4ea5f8d7e4ff01ee51b';
 
       // http://www.omdbapi.com/ will give you rotten tomato rating and imdb rating if it's available
+
+
 
       $happyContainer.append(`
         <h3>Movie Title: ${movieTitle}</h3>
@@ -34,13 +36,32 @@ function displayResults(movie) {
         <p><strong>Summary:</strong> ${movieSummary}</p>
         <p><strong>Release Date:</strong> ${movieRelease}</p>
         <p><strong>Rotten Tomato Rating:</strong> ${movieRating}</p>
-        <div class="btn btn-sm btn-success" data-toggle="modal" data-target="${similarMovieUrl}">Similar Movies</div><br>
+        <div class="btn btn-sm btn-success" data-toggle="modal" onclick="displaySimilarMovie('${movieID}');" data-target="${similarMovieUrl}">Similar Movies</div><br>
         `);
       }
 
     });
 
   }
+
+function displaySimilarMovie(movieID) {
+  //alert(movieID);
+
+  let similarMovieUrl = 'https://api.themoviedb.org/3/movie/' + movieID +'/similar?api_key=9bd1f25c3d0ac4ea5f8d7e4ff01ee51b&language=en-US';
+
+  alert(similarMovieUrl);
+
+  $.getJSON(similarMovieUrl, function(data) {
+
+    let movies = data.results;
+    console.log(movies);
+
+    //do the loop and container thing again
+
+
+  }
+
+}
 
 
 //second Happy genre function
